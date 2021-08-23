@@ -15,7 +15,7 @@ function AboutPage(props) {
 
                 <p>My primary programming language is JavaScript (though I have recently started working with Python for a class I'm taking). I have been working a lot with Node.js and React lately. I also have experience styling with HTML/CSS and the Bootstrap framework.</p>
 
-                <p>Outside of school and personal programming projects, you can usually find me hanging out around town working on my debut novel or writing an article for one of my SaaS clients. Most of my freelance experience is with Salesforce consultancy firms. If interested, feel free to head over to my contact page and get in touch. I/'d love to talk.</p>
+                <p>Outside of school and personal programming projects, you can usually find me hanging out around town working on my debut novel or writing an article for one of my SaaS clients. Most of my freelance experience is with Salesforce consultancy firms. If interested, feel free to head over to my contact page and get in touch. I'd love to talk.</p>
             </Content>
         </div>
     )
