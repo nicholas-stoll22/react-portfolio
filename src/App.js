@@ -53,7 +53,7 @@ class App extends React.Component {
             <Nav className="ml-auto">
               <Link className="nav-link" to="/">home</Link>
               <Link className="nav-link" to="/about">about</Link>
-              <Link className="nav-link" to="/projects">projects</Link>
+              <Link className="nav-link" to="https://nicholas-stoll22.github.io/projects">projects</Link>
               <Link className="nav-link" to="/contact">contact</Link>
             </Nav>
             </Navbar.Collapse>
