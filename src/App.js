@@ -53,7 +53,7 @@ class App extends React.Component {
             <Nav className="ml-auto">
               <Link className="nav-link" to="/">home</Link>
               <Link className="nav-link" to="/about">about</Link>
-              <Link className="nav-link" to="https://nicholas-stoll22.github.io/projects">projects</Link>
+              <Link className="nav-link" to="/projects">projects</Link>
               <Link className="nav-link" to="/contact">contact</Link>
             </Nav>
             </Navbar.Collapse>
@@ -62,7 +62,7 @@ class App extends React.Component {
           <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} /> } />
           <Route path="/react-deploy" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} /> } />
           <Route path="/about" render={() => <AboutPage title={this.state.about.title} /> } />
-          <Route path="/projects" render={() => <ProjectPage title={this.state.projects.title} subTitle={this.state.projects.subTitle} /> } />
+          <Route path="https://nicholas-stoll22.github.io/projects" render={() => <ProjectPage title={this.state.projects.title} subTitle={this.state.projects.subTitle} /> } />
           <Route path="/contact" render={() => <ContactPage title={this.state.contact.title} /> } />
 
           <Footer />
