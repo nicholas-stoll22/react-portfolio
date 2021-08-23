@@ -5,8 +5,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import './App.css';
 
-import { Router, Route, browserHistory,hashHistory IndexRoute } from 'react-router'
-
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
@@ -46,7 +44,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <Router history={history}>
+      <Router>
         <Container className="p-1 flex-wrapper" fluid={true}>
           
           <Navbar className="border-bottom" bg="transparent" expand="lg">
