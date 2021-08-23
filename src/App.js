@@ -11,8 +11,6 @@ import AboutPage from './pages/AboutPage';
 import ProjectPage from './pages/ProjectPage';
 import ContactPage from './pages/ContactPage';
 
-let history = process.env.NODE_ENV === "production" ? browserHistory : hashHistory;
-
 class App extends React.Component {
 
   constructor(props) {
@@ -62,7 +60,7 @@ class App extends React.Component {
           </Navbar>
 
             <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} /> } />
-            <Route path="/react-deploy" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} /> } />
+            <Route path="/react-portfolio" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} /> } />
             <Route path="/about" render={() => <AboutPage title={this.state.about.title} /> } />
             <Route path="/projects" render={() => <ProjectPage title={this.state.projects.title} subTitle={this.state.projects.subTitle} /> } />
             <Route path="/contact" render={() => <ContactPage title={this.state.contact.title} /> } />

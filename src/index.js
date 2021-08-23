@@ -8,11 +8,9 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { HashRouter } from 'react-router-dom';
 
 ReactDOM.render(
-    <React.StrictMode>
         <HashRouter>
             <App />
-        </HashRouter>
-    </React.StrictMode>,
+        </HashRouter>,
     document.getElementById('root')
 );
 

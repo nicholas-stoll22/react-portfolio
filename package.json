@@ -2,7 +2,7 @@
   "name": "portfolio-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nicholas-stoll22.github.io/react-deploy",
+  "homepage": "https://nicholas-stoll22.github.io/react-portfolio",
   "dependencies": {
     "axios": "^0.19.2",
     "boostrap": "^2.0.0",

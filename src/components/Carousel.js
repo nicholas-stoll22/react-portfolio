@@ -19,7 +19,7 @@ class Carousel extends React.Component {
                     title: 'Work Experience',
                     subTitle: 'Selected projects.',
                     imgSrc: devgrub,
-                    link: '/projects',
+                    link: '#/projects',
                     selected: false
                 },
                 {
@@ -27,7 +27,7 @@ class Carousel extends React.Component {
                     title: 'My Journey',
                     subTitle: 'Building my future.',
                     imgSrc: youtube,
-                    link: '/about',
+                    link: '#/about',
                     selected: false
                 },
                 {
@@ -35,7 +35,7 @@ class Carousel extends React.Component {
                     title: 'Business Inquiries',
                     subTitle: 'Professional contact information.',
                     imgSrc: evverest,
-                    link: 'contact',
+                    link: '#/contact',
                     selected: false
                 },
             ]
