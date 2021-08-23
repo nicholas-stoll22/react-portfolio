@@ -46,7 +46,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <Router>
+      <Router history={history}>
         <Container className="p-1 flex-wrapper" fluid={true}>
           
           <Navbar className="border-bottom" bg="transparent" expand="lg">
@@ -63,13 +63,11 @@ class App extends React.Component {
             </Navbar.Collapse>
           </Navbar>
 
-          <Router history={history}>
             <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} /> } />
             <Route path="/react-deploy" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} /> } />
             <Route path="/about" render={() => <AboutPage title={this.state.about.title} /> } />
             <Route path="/projects" render={() => <ProjectPage title={this.state.projects.title} subTitle={this.state.projects.subTitle} /> } />
             <Route path="/contact" render={() => <ContactPage title={this.state.contact.title} /> } />
-          </Router>
 
           <Footer />
 
