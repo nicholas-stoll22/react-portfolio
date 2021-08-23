@@ -20,7 +20,6 @@ class CarouselTwo extends React.Component {
                     title: 'Solid Background Generator:',
                     subTitle: 'Color inspiration for web development',
                     imgSrc: colors,
-                    link: 'https://devgrub.com',
                     selected: false
                 },
                 {
