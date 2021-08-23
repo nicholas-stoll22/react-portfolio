@@ -2,7 +2,7 @@
   "name": "portfolio-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://nicholas-stoll22.github.io/react-deploy",
+  "homepage": "https://nicholas-stoll22.github.io/react-deploy",
   "dependencies": {
     "axios": "^0.19.2",
     "boostrap": "^2.0.0",
@@ -37,6 +37,8 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:3030"
+  "proxy": "http://localhost:3030",
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
 }
-
