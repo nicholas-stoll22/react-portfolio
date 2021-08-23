@@ -5,11 +5,15 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import './App.css';
 
+import { Router, Route, browserHistory,hashHistory IndexRoute } from 'react-router'
+
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ProjectPage from './pages/ProjectPage';
 import ContactPage from './pages/ContactPage';
+
+let history = process.env.NODE_ENV === "production" ? browserHistory : hashHistory;
 
 class App extends React.Component {
 
@@ -59,11 +63,13 @@ class App extends React.Component {
             </Navbar.Collapse>
           </Navbar>
 
-          <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} /> } />
-          <Route path="/react-deploy" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} /> } />
-          <Route path="/about" render={() => <AboutPage title={this.state.about.title} /> } />
-          <Route path="/projects" render={() => <ProjectPage title={this.state.projects.title} subTitle={this.state.projects.subTitle} /> } />
-          <Route path="/contact" render={() => <ContactPage title={this.state.contact.title} /> } />
+          <Router history={history}>
+            <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} /> } />
+            <Route path="/react-deploy" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} /> } />
+            <Route path="/about" render={() => <AboutPage title={this.state.about.title} /> } />
+            <Route path="/projects" render={() => <ProjectPage title={this.state.projects.title} subTitle={this.state.projects.subTitle} /> } />
+            <Route path="/contact" render={() => <ContactPage title={this.state.contact.title} /> } />
+          </Router>
 
           <Footer />
 
